@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    #logo{
+        padding: 15px;
+        margin: 0 15px;
+        width: 100px;
+        height: 25px;
+    }
+    nav{
+        display: flex;
+    }
+    nav ul{
+        display: flex;
+        padding-right: 200px;
+        margin-left:auto;
+    }
+    nav ul li{
+        display: inline-block;
+        padding: 15px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        padding: 0 20px;
+        color: #000000;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+    .btn{
+        padding:10px 25px;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+        margin-left: auto;
+        margin: 7px 30px;
+        text-decoration:none;
+       color: rgb(255, 255, 255);
+    }
+    #chk{
+            opacity: 0;
+            position: absolute;
+            left: 290px;
+            top: 20px;}
+       #icon{
+          opacity: 0;
+            }
+          nav ul li a:hover{
+            color:rgb(0, 89, 255);
+          }
+          .banner-section{
+            background-color: rgb(52, 52, 204);
+            display: flex;
+          }
+          #bimg{width: 325px;
+                  height: 445px;
+                margin-top: 25px;}
+         .banner-content{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:  33px 70px;
+            margin: 75px 30px;
+            font-size: 25px;
+         }
+         .p1{
+            margin-top: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         .section-2{
+            background-color: #fff;
+            display: flex;
+         }
+         .img2{ width: 300px;
+            height: 170px;
+            margin: 150px 100px;
+         }
+         .section2-content h2{font-family: Arial, Helvetica, sans-serif;
+               font-size: 64px;
+            margin: 90px 70px 0;}
+          .section2-content .p1{
+            color:#000000;
+            margin: 20px 73px;
+            font-size: 20px;
+         }
+         .section2-content .p2{
+            color: #615757;
+            margin: 0 200px 0 -38px;
+            text-align: justify;
+            padding: 5px 111px;
+         }   
+         .section3-data h2{
+            font-size: 60px;
+            margin: 30px 0;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         .section3-data .p3{
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+         }
+         .box{
+            display: flex;
+            margin: 60px;
+         }
+         .box2{
+            display: flex;
+         }
+        
+         .imgp{
+            padding: 0 50px;
+            text-align: center;
+         }
+         .section-4{
+            background-color: #ffffff;
+            display: flex;
+         }
+         .sec4-img{
+            width: 282px;
+            height: 386px;
+            margin: 30px 70px;
+         }
+         .sec4-data{
+            color: #000000;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 80px 100px;
+            font-size: 20px;
+         }
+         .weather{
+            width: 20px;
+            height:20px;
+         }
+         .w{
+            display: flex;
+            position: relative;
+            right: 462px;
+            top: 200px;
+            margin: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px;
+            font-size: 15px;
+         }
+         .sec4-jpg{
+            display: flex;
+            position: relative;
+         }
+         .section-5{
+            display: flex;
+         }
+         .sec5-img{
+            width: 365px;
+            height: 353px;
+            margin-right: 20px;
+         }
+         .h5{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 100px 100px 0;
+         }
+         .p5{
+            text-align: center;
+            text-align: justify;
+            margin: 20px 100px;
+            font-size: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+         }
+         .sec6-img{
+            display: flex;
+         }
+         .sec6{
+            margin: 0 50px;
+            padding: 20px;
+            width: 118px;
+            height: 200px;
+            position: relative;
+            left: 210px;
+         }
+         .h6{
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+         }
+         .p6{margin-top: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            padding: 0 300px;
+         }
+         .section-7{
+            background-color: rgb(58, 58, 226);
+            display: flex;
+         }
+         .sec7-img{
+            width: 345px;
+            height: 485px;
+            margin: 20px 0 20px 40px;
+         }
+         .h7{
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        padding: 100px 380px;
+          font-size: 45px;
+          margin-left: 115px;
+         }
+         .btn7{
+            width: 135px;
+            height: 40;
+            position: relative;
+            top:270px;
+            margin: 10px;
+            left: 100px
+         }
+         .sec7-data{
+            position: absolute;
+         }
+    @media (max-width:620px)
+    {
+        .container{
+            width: 100%;
+        }
+        nav{
+            display: block;
+            position: relative;
+        }
+        nav ul{
+            display: block;
+            background-color: rgb(255, 255, 255);
+            position: absolute;
+            right: 320px;
+            transition: all 0.6s ease-in-out;
+         }
+         
+         nav ul li a{
+            color: rgb(0, 0, 0);
+         }
+        .btn{
+            padding: 5px;
+            margin-left:-35px;
+            flex-direction: column;
+            position: relative;
+            top: 220px;
+            opacity: 0;
+            transition: all 0.6s ease-in-out;
+        }
+        
+        #chk{
+        opacity:0; }
+        #chk:checked ~ ul{
+        right:-30px;}
+        #chk:checked ~ .btn{opacity: 1;}
+        #icon{
+            color: #000000;
+            position: absolute;
+            left: 290px;
+            top: 20px;
+            opacity: 1;}
+            .banner-section{
+                width: 100%;
+            }
+            .banner-content{
+                margin: 0;
+                padding: 0;
+                font-size: 5px;
+                margin-top: 70px;
+            }
+        #bimg{
+            margin-top: 20px;
+            width: 135px;
+            height: 200px;
+            padding: 0;
+        }
+        .p1{
+            margin: 0;
+        }
+        .section-2{
+            margin: 0;
+            display: block;
+        }
+        .section2-content h2{
+            margin: 0;
+            font-size: 45px;
+            padding: 15px;
+        }
+        .section2-content .p1{
+            margin: 0;
+            padding: 15px;
+        }
+    .section2-content .p2{
+        margin: 0;
+        padding: 15px;
+    }
+    .img2{
+        margin: 0;
+        padding: 10px;
+    }
+    .section-3 .box{
+        display: block;
+        margin: 0;
+    }
+    .section-3 .box2{
+        display: block;
+        margin: 0;
+    }
+    .section3-data h2{
+        margin: 0;
+        padding: 10px;
+        font-size: 40px;
+    }
+    .section3-data .p3{
+        margin: 0;
+        padding: 10px;
+        font-size: 20px;
+    }
+    .section-4{
+        display: block;
+    }
+    .sec4-img{
+        margin: 0;
+        padding: 0;
+    }
+    .sec4-data{
+        margin: 0;
+        padding: 10px;
+    }
+    .section-5{
+        margin: 0;
+    }
+    .sec5-data .h5{
+        margin: 0;
+        padding: 0 10px;
+        font-size: 20px;
+    }
+    .sec5-data .p5{
+        margin: 0;
+        padding: 0 10px;
+        font-size: 6px;
+    }
+    .sec5-img{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    .section-6{
+        margin: 0;
+        padding: 0;
+    display: block;
+    }
+    .sec6-img{ display: block;}
+    .section-6 .p6{
+        margin: 0;
+        padding: 10px;
+    }
+    .section-6 .h6{
+        margin: 0;
+    }
+    .sec6{
+        margin: 0;
+        padding: 20px 0;
+        margin-left: -100px;
+    }
+    .section-7{
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        display: block;
+    }
+    .sec7-img{
+        display: none;
+    }  
+    .h7{
+        margin: 0;
+        padding: 0 10px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .btn7{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        top: 200px;
+    }
+    .w{
+        position: relative;
+        top: 0;
+        left: 40px;
+    }
+}
+    
+</style>
+<body>
+    <div class="container">
+        <nav>
+            <img src="logo-2.png" id="logo">
+            <i class="fa fa-bars" aria-hidden="true" id="icon"></i>
+            <input type="checkbox" id="chk">
+            <ul>
+                <li><a href="">Overview</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Icon</a></li>
+                <li><a href="">Compatiblity</a></li>
+            </ul>
+            <a class="btn" href="">Get the app</a>
+        </nav>
+      <div class="banner-section">
+        <div class="banner">
+            <img src="android.png" id="bimg">
+        </div>
+        <div class="banner-content">
+         <h1>Now you'll exactly when the rain will start or stop,right where you are standing.</h1>
+         <p class="p1"> - it's like magic</p>
+        </div>
+     </div>
+     <div class="section-2">
+        <div class="section2-content">
+            <h2>Easy, Fast, Accurrate!</h2>
+            <p class="p1">Weathy reminds you how to dress !</p>
+            <p class="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="section-img">
+            <img src="devices.png" class="img2">
+        </div>
+
+     </div>
+     <div class="section-3">
+            <div class="section3-data">
+                <h2>Forecasting made fun!</h2>
+                <p class="p3">Not just another boring weather app in your device!</p>
+            </div>
+            <div class="box">
+            <div class="accurate"><center><img src="accurate.png"></center>
+            <h2 class="imgp">Accurate</h2>
+        <p class="imgp">Sed non mauris vitae erat consequat auctor eu in. Class aptent tasocios ad litora torquent peer.</p></div>
+        <div class="machine"><center><img src="timemachine.png"></center>
+            <h2 class="imgp">Time Machine</h2>
+            <p class="imgp">Donec sed luctus neque. Nullam ultrices sed justo vel aliquam. Vivamus mattis pellentesque felis.</p></div>
+      
+            <div class="city"><center><img src="personalized.png"></center>
+                <h2 class="imgp">City Personalized</h2>
+                <p class="imgp">Donec sed luctus neque. Nullam ultrices sed justo vel aliquam. Vivamus mattis pellentesque felis.</p></div>
+             </div>
+            <div class="box2">
+                <div class="gallery"><center><img src="gallery.png"></center>
+                    <h2 class="imgp">World Gallery</h2>
+                    <p class="imgp">Sed non mauris vitae erat consequat auctor eu in. Class aptent tasocios ad litora torquent peer.</p></div>
+                    <div class="maps"><center><img src="worldmap.png"></center>
+                        <h2 class="imgp">Weather Maps</h2>
+                        <p class="imgp">Nulla tortor dolor, dapibus vitae nunc eget, varius ultrices turpis donec vitae magna nec tortor fermentum.</p></div>
+            <div class="customisable"><center><img src="settings.png">
+                <h2 class="imgp">Customisable</h2> 
+                <p class="imgp">Donec sed luctus neque. Nullam ultrices sed justo vel aliquam. Vivamus mattis pellentesque felis.</p></div>
+            </div>
+     </div>
+     <div class="section-4">
+        <div class="sec4-img"><img src="phone (1).png" class="sec4-img"></div>
+        <div class="sec4-data">
+            <h1>Unique icons,
+                For every device!</h1>
+                <p>Who make your weather forecast fun!</p>
+        </div>
+        <div class="sec4-jpg">
+        <div class="sec4-jpg1">
+            <div class="w"><img src="weather-1.png" class="weather"><h4>Sunny</h4></div>
+            <div class="w"><img src="weather-2.png" class="weather"><h4>Shinny</h4></div>
+            <div class="w"><img src="weather-3.png" class="weather"><h4>Cloudy</h4></div>
+            
+        </div>
+        <div class="sec4-jpg3">
+            <div class="w"><img src="weather-4.png" class="weather"><h4>Sunny</h4></div>
+            <div class="w"><img src="weather-5.png" class="weather"><h4>Shinny</h4></div>
+            <div class="w"><img src="weather-6.png" class="weather"><h4>Cloudy</h4></div>
+            
+        </div>
+        </div>
+     </div>
+     <div class="section-5">
+        <div class="sec5-data">
+            <h1 class="h5">On Your Watch!</h1>
+            <p class="p5">Available on apple watch and motorola 360.</p>
+            <p class="p5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, voluptatum quasi. Itaque iusto nulla, cupiditate dicta consequuntur autem minus harum rerum voluptas dolorem sed et nam eligendi debitis quisquam omnis Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur provident fugit eligendi aliquam ratione hic pariatur fugiat non ad itaque esse expedita voluptatem, corporis architecto magni, quaerat blanditiis voluptates rerum.</p>
+        </div>
+        <div><img src="watch.png" class="sec5-img"></div>
+     </div>
+     <div class="section-6">
+       <h1 class="h6">Different skins, for every season.</h1>
+       <p class="p6">Cras eleifend aliquam turpis, vitae aliquam eros blandit vel.
+        Praesent id dolor id esteod maximus id vitae eros.</p>
+        <div class="sec6-img">
+            <div><img src="watch-1.png" alt="" class="sec6"></div>
+        <div><img src="watch-2.png" alt="" class="sec6"></div>
+        <div><img src="watch-3.png" alt=""class=sec6></div>
+    </div>
+     </div>
+     <div class="section-7">
+            <div><img src="phone (1).png" class="sec7-img"></div>
+           <div><a href=""><img src="appstore-300x85.png" class="btn7"></a></div>
+           <div><a href=""><img src="googplay-300x81.png" class="btn7"></a></div>
+            <div class="sec7-data">
+                <h1 class="h7">Enough looking,
+                Get a copy of Weathy on:</h1>
+            </div>
+    </div>
+    </div>
+</body>
+</html>
